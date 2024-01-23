@@ -1,8 +1,8 @@
 package com.task.service;
 
 import com.task.controller.auth.dto.AuthResponse;
-import com.task.dto.Role;
-import com.task.dto.User;
+import com.task.domain.User;
+import com.task.domain.enums.Role;
 import com.task.repository.spec.IUserDatabase;
 import com.task.service.spec.IJwtService;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +20,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class AuthServiceTest {
+class AuthServiceTest {
 
     @Mock
     private IUserDatabase userDatabase;
@@ -42,7 +42,7 @@ public class AuthServiceTest {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Test
+
     public void testLogin() {
         User user = User.builder()
                 .username("testuser")

@@ -1,6 +1,6 @@
-package com.task.dto;
+package com.task.domain;
 
-import com.task.dto.Role;
+import com.task.domain.enums.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -2,7 +2,9 @@ package com.task.controller.auth;
 
 import com.task.controller.auth.dto.LoginRequest;
 import com.task.controller.auth.dto.RegisterRequest;
-import com.task.dto.User;
+import com.task.controller.task.dto.UpdateTaskRequest;
+import com.task.domain.Task;
+import com.task.domain.User;
 
 public class MapperAuth {
     private MapperAuth() {
@@ -23,4 +25,6 @@ public class MapperAuth {
                 .password(request.getPassword())
                 .build();
     }
+
+
 }
